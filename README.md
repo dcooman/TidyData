@@ -1,2 +1,2 @@
 # TidyData
-Repository for the peer-graded project on tidy data
+## Repository for the peer-graded final project for the "Getting and Cleaning Data" class
