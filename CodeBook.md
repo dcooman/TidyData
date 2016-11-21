@@ -1,3 +1,3 @@
 #TidyData CodeBook
 
-##This explains the final dataset
+##This CodeBook explains the variables and transformations
