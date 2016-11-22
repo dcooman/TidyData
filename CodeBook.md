@@ -1,6 +1,6 @@
-#TidyData CodeBook
+##TidyData CodeBook
 
-##This CodeBook explains the files, variables and transformations for the run_analysis 
+###This CodeBook explains the files, variables and transformations for the run_analysis 
 
 ###The Data Files:
 
