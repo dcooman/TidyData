@@ -33,7 +33,7 @@ to the training dataset.
 14.  Append the x_test and x_train data frames to each other using rbind.
 15.  Rearrange and eliminate unneeded columns in the combined dataset.  Move the key columns; subject_id, 
 activity, and study_group, to the front; and remove all but the data columns 
-that contain the mean or standard deviations.  These columns contain the phrase "mean" r the phrase "std".
+that contain the mean or standard deviations.  These columns contain the phrase "mean" or the phrase "std".
 16.  Summarize the combined data frame on subject_id, activity, and study_group, calculating the mean for each
 variable and saving the summarized data file as a text file using write.table.  The final product is a text file 
 called 'final.txt'.  
