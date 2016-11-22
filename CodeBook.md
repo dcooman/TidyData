@@ -29,12 +29,13 @@ same codes for both the test and trainig datasets.
 ###Details on Specific Files
 
 *  activity_labels.txt - Contains the six activity codes and their descriptions.  These are:
-..*  1 - Walking
-..*  2 - Walking Upstairs
-..*  3 - Walking Downstairs
-..*  4 - Sitting
-..*  5 - Standing
-..*  6 - Laying
+
+	*  1 - Walking
+	*  2 - Walking Upstairs
+	*  3 - Walking Downstairs
+	*  4 - Sitting
+	*  5 - Standing
+	*  6 - Laying
 
 ###Data Transformations
 
