@@ -40,7 +40,7 @@ called 'final.txt'.
 
 ###How to Use the Result Data set
 
-To persue additional anaylsys, the file should be opened with read.table("final.txt",header=TRUE).
+To persue additional analysys, the file should be opened with read.table("final.txt",header=TRUE).
 
 
 
