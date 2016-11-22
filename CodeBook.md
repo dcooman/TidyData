@@ -53,7 +53,7 @@ in the script to shift to lower case and replace all dashes and parenthese to si
 
 4.  A new column, study_group, was added to reference to which study group each subject belonged.
 
-5.  The final dataset inluces only the average for each combination of subject_id and activity.
+5.  The final dataset includes only the average for each combination of subject_id and activity.
 
 ###Citation
 
