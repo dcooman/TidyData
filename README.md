@@ -40,7 +40,9 @@ called 'final.txt'.
 
 ###How to Use the Result Data set
 
-To persue additional analysys, the file should be opened with read.table("final.txt",header=TRUE).
+To persue additional analysis, the file should be opened with read.table("final.txt",header=TRUE).
+
+This data frame consists of 180 rows and 89 columns
 
 
 
