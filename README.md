@@ -26,6 +26,8 @@ y_test.txt and y_train.txt tables.
 are all parallel tables where the first record in each go together and so on until the end of the file.
 2.  The x_train (main file), the y_train (activity codes) and the subject_train (subject IDs) 
 are all parallel tables where the first record in each go together and so on until the end of the file.
+3.  The activity code file contans the code (1-6) and the matching activity description.  These are the
+same codes for both the test and trainig datasets.
 
 
 ###The Process
@@ -53,7 +55,9 @@ to the training dataset.
 14.  Append the x_test and x_train data frames using rbind.
 15.  Rearrange and eliminate unneeded columns in the combined dataset.  Move the key columns; subject_id, 
 activity, and study_group, to the front; and remove all but the data columns 
-that contain the mean or standard deviations.  These columns contains the phrase "mean" r the phrase "std".
+that contain the mean or standard deviations.  These columns contain the phrase "mean" r the phrase "std".
+16.  Summarize the combined data frame on subject_id, activity, and study_group, calculating the mean for each
+variable and saving the summarized data file as a text file using write.table.
 
 
 
