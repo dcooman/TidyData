@@ -1,39 +1,17 @@
 ## TidyData
 
+###This document describes the code and processing algorythm for the *run_analysis.R* function.
+
 ###Prerequities to Running the Code:
 
 1.  The data files are already downloaded and unzipped and are available in the working directory
 2.  The dplyr library has been installed into R
+3.  The file run_analysis.R has been sourced into your R environment
 
-###The Data Files:
-
-The raw data consists of eight text files with data from the Human Activity Recognition 
-Smartphones Dataset.  These are:
-
-1.  x_test.txt - The data from the test study group
-2.  y_test.txt - The activity codes for each row of the x_test.txt file
-3.  x_train.txt - The data from the training study group
-4.  y_train.txt - The activity codes for each row of the x_train.txt file
-5.  activity_labels.txt - The decoded activity values for the activity codes in the 
-y_test.txt and y_train.txt tables.
-6.  subject_test.txt - The subject numbers for each row of the x_test.txt file
-7.  subject_train.txt - The subject numbers for each row of the x_train.txt file 
-8.  features.txt - the column labels for the x_test.txt and x_train.txt data files
-
-###Assumptions about the Data Files:
-
-1.  The x_test (main file), the y_test (activity codes) and the subject_test (subject IDs) 
-are all parallel tables where the first record in each go together and so on until the end of the file.
-2.  The x_train (main file), the y_train (activity codes) and the subject_train (subject IDs) 
-are all parallel tables where the first record in each go together and so on until the end of the file.
-3.  The activity code file contans the code (1-6) and the matching activity description.  These are the
-same codes for both the test and trainig datasets.
-
-
-###The Process
+###The Analysis Process
 
 This explains the entire process from raw, downloaded data files to a tidy dataset ready for 
-analysis.  The code is heaviliy commented, this is a synopsis.
+analysis.  The code is heaviliy commented, this is a synopsis of the steps.
 
 1.  Load the dplyr library as we will need some of the subroutines
 2.  Read in the features.txt file and create a vector of column labels for the raw data.
@@ -57,7 +35,8 @@ to the training dataset.
 activity, and study_group, to the front; and remove all but the data columns 
 that contain the mean or standard deviations.  These columns contain the phrase "mean" r the phrase "std".
 16.  Summarize the combined data frame on subject_id, activity, and study_group, calculating the mean for each
-variable and saving the summarized data file as a text file using write.table.
+variable and saving the summarized data file as a text file using write.table.  The final product is a text file 
+called 'final.txt'.  It should be opened with read.table("final.txt",header=TRUE).
 
 
 
