@@ -1,6 +1,6 @@
 ## TidyData
 
-###This document describes the code and processing algorythm for the *run_analysis.R* function.
+###This document describes the code and processing algorythm for the **run_analysis.R** function.
 
 ###Prerequities to Running the Code:
 
@@ -36,7 +36,11 @@ activity, and study_group, to the front; and remove all but the data columns
 that contain the mean or standard deviations.  These columns contain the phrase "mean" r the phrase "std".
 16.  Summarize the combined data frame on subject_id, activity, and study_group, calculating the mean for each
 variable and saving the summarized data file as a text file using write.table.  The final product is a text file 
-called 'final.txt'.  It should be opened with read.table("final.txt",header=TRUE).
+called 'final.txt'.  
+
+###How to Use the Result Data set
+
+To persue additional anaylsys, the file should be opened with read.table("final.txt",header=TRUE).
 
 
 
