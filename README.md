@@ -52,7 +52,7 @@ data frames to store the row number. This will be used as a linking key.
 12.  Merge the x_test and activity_labels data frames by act_code.  This adds the full activity name to the test dataset.
 13.  Merge the x_train and activity_labels data frames by act_code.  This adds the full activity name 
 to the training dataset.
-14.  Append the x_test and x_train data frames using rbind.
+14.  Append the x_test and x_train data frames to each other using rbind.
 15.  Rearrange and eliminate unneeded columns in the combined dataset.  Move the key columns; subject_id, 
 activity, and study_group, to the front; and remove all but the data columns 
 that contain the mean or standard deviations.  These columns contain the phrase "mean" r the phrase "std".
